@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title> Spring-SignUp</title>
+  </head>
+  <body>
+    <style>
+    body{
+      font-family:"Georgia";font-size: 90%;margin:20px;
+      box-shadow: 20;
+      background-image: url("green.jpg");
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      }
+      .container{
+        width: 60%;
+        margin: 20;
+        float:left;
+      }
+      a{
+        color: black;margin: 0;
+        text-decoration: none;
+        padding: 10px 25px;
+        font-size: 140%;
+        display: inline-block;
+        float:right;
+      }
+      h1{
+        color: green;
+        padding: 5px;
+        line-height: 2;
+        text-shadow: 3px 2px yellow;
+        z-index: 8;
+        float: left;
+        background-color: transparent;
+        display: inline-block;
+      }
+      h2{
+        color: red;
+        line-height: 1.8;
+        font-weight: 400;
+        text-align: center;
+        width:800px;margin: 20px 0 0;
+        font-size: 200%;
+        text-shadow: 3px 2px yellow;
+        left: 0;
+        z-index: 8;
+        margin: auto;
+        margin-top: 100px;
+        position: absolute;
+        top: 50%;
+      }
+      pre{
+        color: blue;
+        line-height: 1.8;
+        text-align: center;
+        width:800px;margin: 20px 0 0;
+        font-size: 200%;
+        text-shadow: 3px 2px yellow;
+        left: 0;
+        z-index: 8;
+        margin: auto;
+        margin-top: 100px;
+        position: absolute;
+        top: 20%;
+      }
+      button{
+        width: 260px;height: 30px;background: #0066ff;margin: 10px;
+        font-size: 100%;font-size: 100%;color: red;font-family:"Georgia";
+      }
+      label{
+      color: blue;font-size: 15px;margin: 10px;
+      height: auto;width: auto;box-shadow: 20;
+      }
+      input{
+      font-size: 100%;margin: 10px;
+      height: auto;width: auto;
+      }
+      .mytext {
+        width: 200px;height: 30px;background:white
+        ;font-size: 100%;font-size: 10;font-family:"Georgia";
+      }
+      .registration {
+        width: 220px;height: 620px;border: 1px solid skyblue;padding: 10px;margin: 12px; float:right;
+        background-color: transparent;
+      }
+      .bottom-portion{
+        bottom: 10%;
+        float: right;
+        position:fixed;
+      }
+      select{
+      font-size: 100%;margin: 10px;
+      height: auto;width: auto;
+      }
+    </style>
+    <script type="text/javascript">
+    function joinFB() {
+      location.href = "https://www.facebook.com";
+    }
+    function joinGmail() {
+      location.href = "https://www.gmail.com";
+    }
+    </script>
+    <div class="spring">
+      <div class="top-portion">
+        <div class="Header"><font size="6"><h1>Spring</h1></font></div>
+        <nav class="container">
+          <a href="file:///Users/Falcon/Desktop/New%20UI%20Project/Spring_home.html">Home</a>
+          <a href="file:///Users/Falcon/Desktop/New%20UI%20Project/Spring_about.html">About</a>
+          <a href="file:///Users/Falcon/Desktop/New%20UI%20Project/Spring_contactUs.html">Contact Us</a>
+          <a href="file:///Users/Falcon/Desktop/New%20UI%20Project/Spring_signUp.html">Sign Up</a>
+        </nav>
+      </div>
+      <div class="middle-portion">
+        <div class="text-middle">
+          <pre>
+            I dream of the sun, I dream of the beach,
+            In a far flung sun drenched town.
+            I dream of better weather,
+            To turn my day around.
+          </pre>
+          <h2><q>The Spring of love becomes hidden and soon filled up..!</h2>
+        </div>
+        <div class="Registration" action="index.html" method="post">
+          <ul class="registration">
+            <p style="color:Red"</style> <font size="3">Registration:</font></p>
+            <div id="firstName">
+              <label for="firstName">First Name:</label> <br>
+              <input type="text" name="fname" placeholder="First Name" class="mytext" autofocus style="outline: rgb(200, 0, 0) solid 1px">
+              <br>
+            </div>
+            <div id="lastName">
+              <label for="lastName">Last Name:</label> <br>
+              <input type="text" name="lname" placeholder="Last Name" class="mytext" autofocus style="outline: rgb(200, 0, 0) solid 1px">
+              <br>
+            </div>
+            <div id="gender">
+              <label for="gender">Gender:</label> <br>
+              <div id=radio>
+                <input type="radio" name="gender" value="male"> <b>Male</b>
+                &nbsp
+                <input type="radio" name="gender" value="female"> <b>Female</b>
+              </div>
+              <br>
+            </div>
+            <div id="dateOfBirth">
+              <label for="dateOfBirth">DOB:</label> <br>
+              <input type="date" name="dob" placeholder="Date Of Birth" class="mytext" autofocus style="outline: rgb(200, 0, 0) solid 1px">
+              <br>
+            </div>
+            <div id="eMail">
+              <label for="eMail">E-Mail:</label> <br>
+              <input type="text" name="email" placeholder="E-mail Id" class="mytext" autofocus style="outline: rgb(200, 0, 0) solid 1px">
+              <br>
+            </div>
+            <div id="mobileNo">
+              <label for="mobileNumber">MobileNumber:</label> <br>
+              <input type="number" name="mobileNo" placeholder="MobileNumber" class="mytext" maxlength="10" size="10" autofocus style="outline: rgb(200, 0, 0) solid 1px">
+              <br>
+            </div>
+            <div id="state">
+              <label for="state">State:</label> <br>
+              <div id="select">
+                  <select name="stateInfo" placeholder="State" autofocus class="mytext" style="outline: rgb(200, 0, 0) solid 1px">
+                    <option value="select">Select Your State</option>
+                    <option value="TamilNadu">TamilNadu</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Karnataka">Karnataka</option>
+                  </select>
+                </div>
+              </div>
+              <br>
+              <button type="submit" class=button style="width:200px">Submit</button>
+            </ul>
+          </div>
+        </div>
+      <div class="bottom-portion">
+        <button type=button onclick=joinFB()>Join with FB</button>
+        <button type=button onclick=joinGmail()>Join with Gmail</button>
+      </div>
+    </div>
+  </body>
+</html>

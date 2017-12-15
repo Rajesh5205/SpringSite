@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title> Spring-ContactUs</title>
+  </head>
+  <body>
+    <style>
+      body{
+        font-family:"Georgia";font-size: 90%;margin:20px;
+        box-shadow: 20;
+        background-image: url("green.jpg");
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+        .container{
+          width: 60%;
+          margin: 20;
+          float:left;
+        }
+        a{
+          color: black;margin: 0;
+          text-decoration: none;
+          padding: 10px 25px;
+          font-size: 140%;
+          display: inline-block;
+          float:right;
+        }
+        h1{
+          color: green;
+          padding: 5px;
+          line-height: 2;
+          text-shadow: 3px 2px yellow;
+          z-index: 8;
+          float: left;
+          background-color: transparent;
+          display: inline-block;
+        }
+        h3{
+          font-size: 100%;
+          font-family:"Georgia";
+          padding: 10px;
+          background-color: transparent;
+        }
+        p{
+          color: red;line-height: 1;text-align: center;
+          font-size: 100%;z-index: 8;margin-top: 120px;
+          position: absolute;top: 30%;
+          width: 750px;height: 450px;padding: 10px;margin: 12px; float:right;
+          background-color: transparent;
+        }
+        pre{
+          text-indent: 50px; text-align: justify; color: blue;line-height: 1;text-align: left;
+          font-size: 100%;position: absolute;top: 42%;
+          margin: -10px;font-family:"Georgia";
+          background-color: transparent;
+        }
+        button{
+          width: 260px;height: 30px;background: #0066ff;margin: 10px;
+          font-size: 100%;font-size: 100%;color: red;font-family:"Georgia";
+        }
+        label{
+        color: blue;font-size: 15px;margin: 10px;
+        height: auto;width: auto;box-shadow: 20;
+        }
+        input{
+        font-size: 100%;margin: 10px;
+        height: auto;width: auto;
+        }
+        .mytext {
+          width: 200px;height: 30px;background:white
+          ;font-size: 100%;font-size: 10;font-family:"Georgia";
+        }
+        .customer-mail{
+          text-align: left;
+          font-size: 100%;position: absolute;top: 50%;
+          margin: 20px;
+          background-color: transparent;
+        }
+        .contactInfo{
+          width: 260px;height: 290px;
+          margin: 160px; float:right;color: darkgreen;
+          background-color: transparent;font-family:"Georgia";
+        }
+    </style>
+    <script type="text/javascript">
+    function navHome() {
+      location.href = "file:///Users/Falcon/Desktop/Spring_home.html";
+    }
+    </script>
+    <div class="spring">
+      <div class="top-portion">
+        <div class="Header"><font size="6"><h1>Spring</h1></font></div>
+        <nav class="container">
+          <a href="file:///Users/Falcon/Desktop/New%20UI%20Project/Spring_home.html">Home</a>
+          <a href="file:///Users/Falcon/Desktop/New%20UI%20Project/Spring_about.html">About</a>
+          <a href="file:///Users/Falcon/Desktop/New%20UI%20Project/Spring_contactUs.html">Contact Us</a>
+          <a href="file:///Users/Falcon/Desktop/New%20UI%20Project/Spring_signUp.html">Sign Up</a>
+        </nav>
+      </div>
+      <div class="middle-portion">
+        <div class="text-middle">
+          <div class=contact-header>
+            <p style="text-align:left";</style> <font size="5">Contact Us:</font></p>
+          <div class=contact-info> <font size="3">
+            <pre>
+              We are here to answer any questions you may have about our Spring experiences.Reach out to us
+              and we'll respond as soon as we can.Even if there is something you have always wanted to experience and
+              can't find it on Spring, Let us know and we promise we'll do our best to find it for you and send you there.
+            </pre>
+        </div>
+        <div class="customer-mail">
+          <div id="name">
+            <label for="name">Name:</label> <br>
+            <input type="text" name="name" placeholder="Your name" class="mytext" autofocus style="outline: rgb(200, 0, 0) solid 1px">
+            <br>
+          </div>
+          <div id="mailId">
+            <label for="mailId">Mail Id:</label> <br>
+            <input type="text" name="mailId" placeholder="Your Mail id" class="mytext" autofocus style="outline: rgb(200, 0, 0) solid 1px">
+            <br>
+          </div>
+          <div id="message">
+            <label for="name">Message:</label> <br>
+            <textarea rows="5" cols="100" style="margin: 10px;">
+            </textarea> <br>
+          </div>
+          <button type="submit" class="submit" style="width:200px" onclick=navHome()>Send Message</button>
+        </div>
+        <div class="contactInfo">
+          <div id="PhoneNo">
+            <br>
+            <label for="PhoneNo">Telephone:</label> <br>
+            <div style="text-align:center">044-2626226 <br>
+          </div>
+          <div id="mail">
+            <label for="mail">E-Mail:</label> <br>
+            <div style="text-align:center";>springinfo.com<br>
+            <br>
+          </div>
+          <div id="message">
+            <label for="name">Address:</label> <br>
+            <address style="text-align:center">
+              Spring Info Tech.<br>
+              2nd floor, sanmuga apartment,<br>
+              kodambakkam, chennai-600024.
+            </address>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
